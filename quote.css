@@ -3,3 +3,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: #beadfa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+.quote_container{
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 10px 10px 80px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+    line-height: 70px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(25, 25, 158, 0.644);
+    bottom: 6px;
+    height: 3px;
+    width: 90px;
+    left: 40%;
+    
+
+}
+.quote{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.quote::after,
+.quote::before{
+    content: '"';
+}
+.author{
+    float: right;
+    margin-bottom: 10px;
+    position: relative;
+}
+.author::before{
+    content: '';
+    background-color: rgba(25, 25, 158, 0.644);
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 3px;
+    left: -30px;
+}
