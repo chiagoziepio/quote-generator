@@ -17,7 +17,7 @@ body{
     background-color: #fff;
     padding: 20px;
     box-shadow: 10px 10px 80px rgba(0,0,0,0.2);
-    border-radius: 15px;
+    border-radius: 20px;
     text-align: center;
 }
 .title{
@@ -44,6 +44,8 @@ body{
 .quote::after,
 .quote::before{
     content: '"';
+    color: rgba(25, 25, 158, 0.644);
+    font-size: 35px;
 }
 .author{
     float: right;
@@ -58,4 +60,41 @@ body{
     width: 25px;
     height: 3px;
     left: -30px;
+}
+.btns{
+    margin-top: 70px;
+    
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 25px;
+    background-color:rgba(22, 22, 150, 0.658) ;
+    margin: 10px;
+    padding:15px 10px;
+    font-size: 17px;
+    transition: all .3s;
+    line-height: 15px;
+}
+.tweet{
+    background-color: transparent;
+    border: 2.5px solid rgba(22, 22, 150, 0.658);
+    padding-bottom: 8px;
+}
+.tweet i{
+    color: rgb(40, 40, 121);
+    margin-right: 5px;
+    line-height: 10px;
+}
+.btn.nxtBtn:hover{
+    background-color: transparent;
+    border: 2.5px solid rgba(22, 22, 150, 0.658);
+}
+.btn.tweet:hover{
+    background-color:rgba(22, 22, 150, 0.658);
+    border: 0;
+}
+.btn.tweet:hover i{
+    color: white;
 }
